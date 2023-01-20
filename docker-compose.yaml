@@ -177,7 +177,7 @@ services:
     volumes:
       - ./volumes/db/roles.sql:/docker-entrypoint-initdb.d/roles.sql
       - ./volumes/db/realtime.sql:/docker-entrypoint-initdb.d/realtime.sql
-      # - ./volumes/db/data:/var/lib/postgresql/data
+      - ./volumes/db/data:/var/lib/postgresql/data
 
   migrations:
     container_name: supabase-db-migrate
