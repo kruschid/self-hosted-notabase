@@ -4,7 +4,6 @@ FROM node:18-bullseye
 ARG NOTABASE_DOWNLOAD_URL
 ARG NEXT_PUBLIC_SUPABASE_URL
 ARG NEXT_PUBLIC_SUPABASE_KEY
-# ARG SUPABASE_SERVICE_KEY
 
 RUN apt update && \
   apt install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
